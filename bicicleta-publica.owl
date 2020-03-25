@@ -1,0 +1,1601 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/ns/sosa/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/ns/sosa/"
+     versionIRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica">
+    <Prefix name="" IRI="http://www.w3.org/ns/sosa/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Import>http://www.w3.org/ns/sosa/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Red.es</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vocabulario para la representación de datos sobre el sistema de bicicleta pública</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">María Jesús Gallego San Miguel - Ayuntamiento de Madrid</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">esbici</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Servicio de Informática - Ayuntamiento de Santiago de Compostela</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Esta es la versión inicial de la ontología de Bicicleta Pública que ha sido implementada en el contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vocabulary for the representation of data about the public bicycle system</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">María del Mar Arribas de Andrés - Ayuntamiento de Madrid</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.
+En esta versión se han incluido clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reunión del 07/11/2019</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2019-11-07</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Víctor Morlán Plo - Ayuntamiento de Zaragoza</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="hasFeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-estacion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ObservableProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="observedProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Ocupacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesOcupados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="madeBySensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Observation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/spec/geosparql/1.0#Feature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-anclaje"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-modelo-bicicleta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesLibres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#ObservacionEstacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/address"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.org/linked-data/sdmx/2009/code#sex"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dct:identifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-bicicleta"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:endDate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="observes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento/estacion-de-bicicletas"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:identifier"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+        <Class IRI="http://www.opengis.net/spec/geosparql/1.0#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:identifier"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        <Class IRI="Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="observes"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento"/>
+            <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento/estacion-de-bicicletas"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="https://schema.org/address"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#ObservacionEstacion"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#ObservacionEstacion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasFeatureOfInterest"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Ocupacion"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#ObservacionEstacion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="madeBySensor"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#ObservacionEstacion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="observedProperty"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Ocupacion"/>
+        <Class IRI="FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion"/>
+        <Class IRI="ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+        <Class IRI="http://www.opengis.net/spec/geosparql/1.0#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="schema:endDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="schema:startDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:identifier"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
+                <Class abbreviatedIRI="skos:Concept"/>
+            </ObjectAllValuesFrom>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
+                <Class abbreviatedIRI="skos:Concept"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:identifier"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+        <Class IRI="http://www.opengis.net/spec/geosparql/1.0#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta"/>
+            <Datatype abbreviatedIRI="xsd:date"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja"/>
+            <Datatype abbreviatedIRI="xsd:date"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="https://schema.org/name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="dct:identifier"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion"/>
+        <NamedIndividual IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesLibres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion"/>
+        <NamedIndividual IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesOcupados"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-anclaje"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-bicicleta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-estacion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-modelo-bicicleta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento/estacion-de-bicicletas"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento/estacion-de-bicicletas"/>
+        <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento"/>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/linked-data/sdmx/2009/dimension#sex"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="http://purl.org/linked-data/sdmx/2009/code#sex"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-anclaje"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-bicicleta"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="http://vocab.linkeddata.es/datosabiertos/kos/transporte/bicicleta-publica/tipo-estado-estacion"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dct:identifier"/>
+        <ObjectUnionOf>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+            <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:endDate"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta"/>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja"/>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/address"/>
+        <Class IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/name"/>
+        <Class IRI="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:endDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Referencia inequívoca al recurso dentro de un contexto dado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identificador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:hasVersion"/>
+        <AbbreviatedIRI>dct:issued</AbbreviatedIRI>
+        <IRI>http://dublincore.org/usage/terms/history/#issued-003</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:issued</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date of formal issuance (e.g., publication) of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dct:issued</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://purl.org/dc/terms/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:issued</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date Issued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:endDate</AbbreviatedIRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La fecha y hora de finalización de un item (en formato fecha ISO 8601)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:endDate</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The end date and time of the item (in ISO 8601 date format).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>schema:endDate</AbbreviatedIRI>
+        <IRI>https://schema.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:endDate</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:endDate</AbbreviatedIRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fecha de fin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>schema:startDate</AbbreviatedIRI>
+        <IRI>https://schema.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:startDate</AbbreviatedIRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La fecha y hora de inicio de un item (en formato fecha ISO 8601).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:startDate</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The start date and time of the item (in ISO 8601 date format).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:startDate</AbbreviatedIRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fecha de inicio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:startDate</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">start date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lugar de la estación donde se fijan las bicicletas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Place of the station where the bicycles are fixed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Anclaje</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Anclaje</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A bicycle is a two-wheeled vehicle whose pedals transmit the movement to the rear wheel by means of a plate, a pinion and a chain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Una bicicleta es un vehículo de dos ruedas cuyos pedales transmiten el movimiento a la rueda trasera por medio de un plato, un piñón y una cadena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bicicleta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Bicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bicycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lugar donde se puede tanto dejar como recoger las bicicletas. Está compuesto de anclajes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Place where you can both leave and pick up bicycles. It is composed of docks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dock station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Estación de bicicletas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#ObservacionEstacion</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Ocupacion</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Ocupacion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occupancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Ocupacion</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ocupacion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PropiedadEstacion</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Part of a route defined by coordinates and a date and time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Parte de un trayecto definido por unas coordenadas y una fecha y hora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Crossing point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#PuntoPaso</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Punto de paso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Distance traveled to get from a source to a destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Espacio que se recorre para llegar desde un origen hasta un destino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Route</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Trayecto</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Trayecto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person who has the right to use the public bicycle system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persona que tiene derecho a usar el sistema de bicicleta pública</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#Usuario</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Usuario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesLibres</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">anclajes libres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesLibres</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">available docks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesOcupados</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">anclajes ocupados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anclajesOcupados</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">no-available docks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Only year, not complete date of birth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Solamente el año, no la fecha completa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Año de nacimiento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#anioNacimiento</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Year of birth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cada anclaje puede tener tener estado libre, ocupado o inactivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each dock may have three states, free, busy or inactive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dock status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoAnclaje</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">estado de anclaje</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cada bicicleta puede tener tener estado abandonada, libre, en-reparacion, en-reserva, excluida y ocupada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each bicycle may have status abandoned, free, in-repair, in-reserve, excluded and occupied.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">bicycle status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoBicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">estado de bicicleta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cada estación puede tener tener estado operativa y no operativa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each station may have two status, operational and non-operational</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">estado de estación</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#estadoEstacion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">station status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date of passage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#fechaPaso</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fecha de paso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number plate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#matricula</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">matrícula</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">El número de orden un un punto de paso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The order number of a crossing point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">orden</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#orden</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el usuario y el trayecto. Determina cual es el trayecto que ha recorrido un usuario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link between the user and the route. Determines which path a user has traveled.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">makes a route</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#realizaTrayecto</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">realiza un trayecto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el trayecto y el anclaje. Determina cual es el anclaje de destino de un trayecto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link between the route and the dock. Determine which is the dock of destination of a route.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has dock of destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeDestino</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene anclaje de destino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has dock of origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAnclajeOrigen</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene anclaje de origen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el anclaje y la estación. Determina cual es la estación deun determinado anclaje.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link between the dock station and the dock. Determine which is the dock associated of a given dock station.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has an associated dock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoAnclaje</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene asociado un anclaje</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el trayecto y la bicicleta. Determina cual es la bicicleta que ha realizado un determinado trayecto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link between the route and the bicycle. Determine which bicycle has made a certain route.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has a bicycle associated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoBicicleta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene asociado una bicicleta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el trayecto y los puntos de paso. Las bicicletas que dispongan de GPS indicarán los puntos de paso de un trayecto determinado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link from the journey to the crossing points. Bicycles with GPS will indicate the crossing points of a certain route.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has crossing point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneAsociadoPuntoDePaso</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene punto de paso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el trayecto y la estación. Determina cual es la estación de origen de un trayecto determinado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link from the route to the dock station. Determines which is the initial dock station of a certain route.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has final dock station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionDestino</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene estación de destino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enlace entre el trayecto y la estación. Determina cual es la estación de destino de un trayecto determinado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Link from the route to the dock station. Determines which is the final dock station of a certain route.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen</IRI>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has initial dock station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#tieneEstacionOrigen</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tiene estación de origen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Equipamiento perteneciente a una administración, al que cualquier ciudadano puede acudir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta</IRI>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fecha de alta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">start date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja</IRI>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fecha de baja</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.opengis.net/spec/geosparql/1.0#Feature</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156, and it is superclass of all feature types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.opengis.net/spec/geosparql/1.0#Feature</IRI>
+        <IRI>http://www.opengis.net/spec/geosparql/1.0</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.opengis.net/spec/geosparql/1.0#Feature</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+        <AbbreviatedIRI>skos:Concept</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2004-02-xx</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>skos:Concept</AbbreviatedIRI>
+        <AbbreviatedIRI>skos:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:Concept</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>skos:Concept</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An abstract idea or notion; a unit of thought.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+        <AbbreviatedIRI>skos:ConceptScheme</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2004-02-xx</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>skos:ConceptScheme</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept scheme may be defined to include concepts from different sources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>skos:ConceptScheme</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>skos:ConceptScheme</AbbreviatedIRI>
+        <AbbreviatedIRI>skos:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:ConceptScheme</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concept Scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>skos:ConceptScheme</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of concepts, optionally including statements about semantic relationships between those concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>skos:inScheme</AbbreviatedIRI>
+        <IRI>http://www.w3.org/2004/02/skos/core</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:inScheme</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is in scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>skos:inScheme</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relates a resource (for example a concept) to a concept scheme in which it is included.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://schema.org/address</IRI>
+        <IRI>https://schema.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/address</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/address</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dirección</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/name</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name of a dock station.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/name</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nombre de una estación</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://schema.org/name</IRI>
+        <IRI>https://schema.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/name</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/name</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">nombre</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dct:issued"/>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
